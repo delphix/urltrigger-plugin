@@ -112,6 +112,11 @@
             <name>Jenkins Repository</name>
             <url>http://repo.jenkins-ci.org/public/</url>
         </repository>
+        <repository>
+            <id>artifactory.delphix.com</id>
+            <name>Delphix Artifactory</name>
+            <url>http://artifactory.delphix.com/artifactory/maven-private/</url>
+        </repository>
     </repositories>
 
     <pluginRepositories>
