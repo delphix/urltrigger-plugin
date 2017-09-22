@@ -133,7 +133,7 @@ public class URLTrigger extends AbstractTrigger {
 
         @SuppressWarnings("unused")
         public Job<?, ?> getOwner() {
-            return (Job) job;
+            return (Job<?, ?>) job;
         }
 
         @SuppressWarnings("unused")
@@ -178,7 +178,7 @@ public class URLTrigger extends AbstractTrigger {
         if (entryURL != null) {
             Map<String, String> envVars;
             try {
-                envVars = EnvVarsResolver.getPollingEnvVars((Job) job, node);
+                envVars = EnvVarsResolver.getPollingEnvVars((Job<?, ?>) job, node);
             } catch (EnvInjectException e) {
                 throw new XTriggerException(e);
             }
